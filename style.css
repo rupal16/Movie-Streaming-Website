@@ -32,16 +32,16 @@
   vertical-align: middle;
 }
 
-img{
+/*img{
 	width: 250px;
 	height: 300px;
 	margin-right: auto;
 	margin-left: auto;
 	margin: 40px;
 	border: 1px solid white;
-}
+}*/
 
-.overlay {
+/*.overlay {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -52,7 +52,7 @@ img{
   opacity: 0;
   transition: .5s ease;
   background-color: #008CBA;
-}
+}*/
 
 .container:hover .overlay {
   opacity: 1;
@@ -70,4 +70,32 @@ img{
    
 }
 
+
+.container {
+    position: relative;
+    width: 50%;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+ /* width: 100%;
+  height: auto;*/
+  transition: .5s ease;
+  backface-visibility: hidden;
+  width: 200px;
+  height: 250px;
+  margin-right: auto;
+  margin-left: auto;
+  margin: 10px;
+  border: 1px solid white;
+}
 
